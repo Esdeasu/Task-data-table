@@ -5,7 +5,7 @@
       <input 
         type="text"
         class="border-2 mb-2 h-10 p-2"
-        placeholder="Search records"
+        placeholder="Поиск по имени"
         v-model="filterValue"
       />
     </div>
@@ -16,7 +16,7 @@
             v-for="(column, index) in headArray"
             v-bind:key="index"
             @click="sort(column)"
-            class="whitespace-nowrap border-2 p-2 text-left cursor-pointer"
+            class="whitespace-nowrap bg-gray-200 border-2 border-gray-300 p-2 text-left cursor-pointer"
           >
             {{column}}
           </th>
